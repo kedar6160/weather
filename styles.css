@@ -204,7 +204,7 @@ body {
       }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 1024px) and (max-height: 1080px)  {
+@media only screen and (min-width: 425px) and (max-height: 1080px)  {
     .future-forecast {
         background: rgba(55, 59, 71, 0.374);
         justify-content: center;
