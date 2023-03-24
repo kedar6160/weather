@@ -130,7 +130,7 @@ body {
   font-weight: 100;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 425px) {
     .future-forecast {
         background: rgba(105, 85, 85, 0.395);
         justify-content: center;
