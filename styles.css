@@ -343,6 +343,71 @@ body {
  
 }
 
+@media only screen and (min-width: 1924px)and (max-width: 2560px) {
+    .future-forecast {
+      background: rgba(85, 94, 77, 0.4);
+      justify-content: start;
+      align-items: none;
+      overflow-x: scroll;
+    }
+    .weather-forcast-item:hover  {
+      background: rgba(85, 94, 77, 0.66);
+      }
+    .current-info .others {
+      padding: 30px;
+      margin: 30px 0;
+      border: 3px solid #eee;
+    }
+    .current-info .others .weather-item {
+      font-size: x-large;
+      font-weight: 400;
+    }
+    .container {
+      padding: 30px;
+    }
+    .future-forecast .today .temp {
+      font-size: 53px;
+    }
+    .date-container .time {
+      font-size: 120px;
+    }
+    .date-container #am-pm {
+      font-size: 70px;
+    }
+    .date-container .date {
+      font-size: 60px;
+    }
+    .place-container .time-zone {
+      font-size: 50px;
+      font-weight: 400;
+    }
+    .place-container {
+      text-align: end;
+      margin-top: 3 5px;
+    }
+    .future-forecast {
+      padding: 30px;
+      margin: 1.5rem;
+      font-size: x-large;
+      height: 38%;
+      border: 2px solid white;
+    }
+    .future-forecast .today {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .weather-forcast .weather-forcast-item {
+  
+      margin: 30px;
+      border: 3px solid white;
+      padding: 10px;
+    }
+    .weather-forcast .weather-forcast-item .temp{
+      font-weight: 400;
+    }
+   
+   
+  }
 .scroll{
     overflow-x: scroll;
     overscroll-behavior-x: contain;
