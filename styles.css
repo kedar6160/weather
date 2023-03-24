@@ -10,7 +10,7 @@ body {
   background-image: url("weather.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow: visible;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
@@ -79,7 +79,7 @@ body {
   border-radius: 10px;
   margin: 10px 0;
   color: #fff;
-  position: fixed;
+  position: bottom;
   bottom: 0;
   display: flex;
   width: 100%;
@@ -105,28 +105,28 @@ body {
   padding-top: 15px;
 }
 
-.future-forecast .weather-forcast {
+.future-forecast .weather-forecast {
   display: flex;
 }
 
-.weather-forcast .weather-forcast-item {
+.weather-forecast .weather-forecast-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 10px;
   border: 1px solid white;
   border-radius: 10px;
-  padding: 5px;
+  padding-top: 15px;
+
 }
 
-.weather-forcast .weather-forcast-item .day {
+.weather-forecast .weather-forecast-item .day {
   padding: 5px 15px;
   background: #3c3c44;
   border-radius: 50px;
   text-align: center;
 }
-.weather-forcast .weather-forcast-item .temp {
+.weather-forecast .weather-forecast-item .temp {
   font-weight: 100;
 }
 
@@ -138,7 +138,7 @@ body {
         overflow-x: scroll;
         padding: 2px;
       }
-      .weather-forcast-item:hover  {
+      .weather-forecast-item:hover  {
         background: rgba(105, 85, 85, 0.66);
         }
       .current-info .others {
@@ -192,10 +192,10 @@ body {
         padding: 0px 10px;
         height: max-content;
       }
-      .weather-forcast{
+      .weather-forecast{
         width: 700px;
       }
-      .weather-forcast .weather-forcast-item {
+      .weather-forecast .weather-forecast-item {
         margin: 5px;
         border: 1px solid white;
         padding: 10px;
@@ -212,7 +212,7 @@ body {
         overflow-x: scroll;
         padding: 2px;
       }
-      .weather-forcast-item:hover  {
+      .weather-forecast-item:hover  {
         background: rgba(55, 59, 71, 0.66);
         }
       .current-info .others {
@@ -267,10 +267,10 @@ body {
         height: 38%;
         height: max-content;
       }
-      .weather-forcast{
+      .weather-forecast{
         width: 700px;
       }
-      .weather-forcast .weather-forcast-item {
+      .weather-forecast .weather-forecast-item {
         margin: 5px;
         border: 1px solid white;
         padding: 10px;
@@ -284,7 +284,7 @@ body {
     align-items: none;
     overflow-x: scroll;
   }
-  .weather-forcast-item:hover  {
+  .weather-forecast-item:hover  {
     background: rgba(85, 94, 77, 0.66);
     }
   .current-info .others {
@@ -330,13 +330,13 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .weather-forcast .weather-forcast-item {
+  .weather-forecast .weather-forecast-item {
 
     margin: 30px;
     border: 3px solid white;
     padding: 10px;
   }
-  .weather-forcast .weather-forcast-item .temp{
+  .weather-forecast .weather-forecast-item .temp{
     font-weight: 400;
   }
  
@@ -345,8 +345,8 @@ body {
 
 .scroll{
     overflow-x: scroll;
+    padding: 10px;
     overscroll-behavior-x: contain;
-    overflow-y: auto;
     display: flex;
     align-items: start;
     opacity: 0;
@@ -366,13 +366,13 @@ padding-top: 1px;
     opacity: 10;
   }
   
-  .weather-forcast-item {
+  .weather-forecast-item {
     animation: slide-in 0.5s ease-out forwards;
     animation-name: fadeInUp;
   animation-duration: 0.5s;
   animation-fill-mode: both;
   }
-  .weather-forcast-item:hover  {
+  .weather-forecast-item:hover  {
     margin: 0px;
     border: 2px solid white;
     padding: 5px;

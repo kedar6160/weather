@@ -5,7 +5,7 @@ const currentWeatherItemsEl = document.getElementById("current-weather-items");
 const timeZone = document.getElementById("time-zone");
 const countryEl = document.getElementById("country");
 const currentTempEl = document.getElementById("current-temp");
-const weatherForcastEl = document.getElementById("weather-forcast");
+const weatherforecastEl = document.getElementById("weather-forecast");
 
 
 
@@ -99,7 +99,7 @@ function showForecast(data) {
   day++;
   console.log(da);
     forecastDay += `
-  <div class="weather-forcast-item">
+  <div class="weather-forecast-item">
     <img
     src="${icon}"
     alt="weather icon"
@@ -112,7 +112,7 @@ function showForecast(data) {
     <div class="Sunset">Sunset ${sunset}</div>
   </div>`
   }
-  weatherForcastEl.innerHTML = forecastDay;
+  weatherforecastEl.innerHTML = forecastDay;
 
 }
 
