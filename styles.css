@@ -277,7 +277,7 @@ body {
         font-size: large;
       }
 }
-@media only screen and  (max-width: 2560px) {
+@media only screen and (min-width: 1024px) and  (max-width: 2560px) {
   .future-forecast {
     background: rgba(85, 94, 77, 0.4);
     justify-content: start;
