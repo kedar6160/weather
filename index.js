@@ -7,6 +7,10 @@ const countryEl = document.getElementById("country");
 const currentTempEl = document.getElementById("current-temp");
 const weatherForcastEl = document.getElementById("weather-forcast");
 
+
+
+
+
 const week = [
   "Monday",
   "Tuesday",
@@ -52,11 +56,15 @@ function getWeatherData() {
           showTimezone(data);
           showCurrent(data);
           showForecast(data);
+        
 
         })
           
   });
 }
+
+
+
 function showCurrent(data) {
   let {sunrise, sunset} = data.forecast.forecastday[0].astro;
   let {avgtemp_c,avghumidity}= data.forecast.forecastday[0].day;
