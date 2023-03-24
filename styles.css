@@ -10,7 +10,7 @@ body {
   background-image: url("weather.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow: unset;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
